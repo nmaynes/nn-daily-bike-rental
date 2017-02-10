@@ -1,11 +1,10 @@
 
 # coding: utf-8
 
-# # Your first neural network - Solved
-# 
-# In this project, you'll build your first neural network and use it to predict daily bike rental ridership. We've provided some of the code, but left the implementation of the neural network up to you (for the most part). After you've submitted this project, feel free to explore the data and the model more.
-# 
-# 
+# Predicting Ride Share Volume With A Neural Network 
+
+# In this project, we'll build a neural network and use it to predict daily bike rental ridership based on the [Bike Sharing Data Set](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset). 
+# Check out the steps to load, prepare, train, and run predictions on the data. Depending on how ambitious you are feeling, you can tweak the hyperparameters in section.
 
 # In[1]:
 
@@ -19,7 +18,7 @@ import matplotlib.pyplot as plt
 
 # ## Load and prepare the data
 # 
-# A critical step in working with neural networks is preparing the data correctly. Variables on different scales make it difficult for the network to efficiently learn the correct weights. Below, we've written the code to load and prepare the data. You'll learn more about this soon!
+# A critical step in working with neural networks is preparing the data correctly. Variables on different scales make it difficult for the network to efficiently learn the correct weights. Below, is code to prepare the variables for neural network training. Make sure you have downloaded and extracted the Bike Share Data Set mentioned at the top of the page in the same folder as this notebook.
 
 # In[2]:
 
@@ -27,6 +26,9 @@ data_path = 'Bike-Sharing-Dataset/hour.csv'
 
 rides = pd.read_csv(data_path)
 
+# ##Verify the data load
+#
+# Use the pandas.DataFrame.head() method to peek at the top _n_ rows of the data frame.
 
 # In[3]:
 
